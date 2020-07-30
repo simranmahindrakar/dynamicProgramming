@@ -1,0 +1,37 @@
+#include <iostream>
+#include <fstream>
+#include <bits/stdc++.h>
+using namespace std;
+int main ()
+{
+//  ifstream fin("alchemy_validation_input.txt");
+  ifstream fin("alchemy_validation_input.txt");
+  //ofstream fout("merioutputfile.txt");
+  int t;
+ 
+  cin>>t;
+  int casenum=1;
+  while(t--)
+  {
+  int n;
+  cin>>n;
+  char arr[n+1];
+  int anda=0;
+  for(int i=0; i<n; i++) {
+  cin>>arr[i];
+  if(arr[i] == 'A') {
+  anda++;
+ }
+}
+
+if((anda == (n-1)/2) || (anda == (n+1)/2))
+{
+    cout<<"Case #"<<casenum<<": "<<"Y\n";
+    }
+else {
+    cout<<"Case #"<<casenum<<": "<<"N\n";
+}
+casenum++;
+ }
+ 
+}
